@@ -1,39 +1,37 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+//import reactLogo from './assets/react.svg'
+//import viteLogo from '/vite.svg'
 import './App.css'
-import Navbar from './components/navbar'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
-    // <>
-    //   <div>
-    //     <a href="https://vitejs.dev" target="_blank">
-    //       <img src={viteLogo} className="logo" alt="Vite logo" />
-    //     </a>
-    //     <a href="https://react.dev" target="_blank">
-    //       <img src={reactLogo} className="logo react" alt="React logo" />
-    //     </a>
-    //   </div>
-    //   <h1>Vite + React</h1>
-    //   <div className="card">
-    //     <button onClick={() => setCount((count) => count + 1)}>
-    //       count is {count}
-    //     </button>
-    //     <p>
-    //       Edit <code>src/App.jsx</code> and save to test HMR
-    //     </p>
-    //   </div>
-    //   <p className="read-the-docs">
-    //     Click on the Vite and React logos to learn more
-    //   </p>
-    // </>
-    // <div className="text-center text-2xl font-bold text-blue-600">
-    //   Hello, Sunshine!
-    // </div>
-    <Navbar />
-  )
-}
+
+    
+    return (
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-grow text-center p-4">
+          {/* Example content */}
+          <h1 className="text-2xl font-bold">Welcome to My App!</h1>
+          <button
+            onClick={() => setCount((count) => count + 1)}
+            className="mt-4 p-2 bg-blue-500 text-white rounded"
+          >
+            Count is {count}
+          </button>
+          
+        </main>
+        
+        
+        <Footer />
+        
+      </div>
+    );
+  }
+  
+
 
 export default App
