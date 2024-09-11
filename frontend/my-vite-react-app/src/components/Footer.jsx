@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="bg-sky-400 text-white py-6">
+    <footer className="bg-sky-400 w-full fixed bottom-0 text-white py-6">
       <div className="container mx-auto flex justify-between items-center">
         {/* Left side: Contact Us button */}
         <a href="/contact" className="bg-white text-sky-400 hover:bg-gray-100 font-semibold py-2 px-4 rounded">
